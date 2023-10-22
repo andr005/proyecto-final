@@ -8,3 +8,32 @@
     display: inline;
     margin-right: 10px;
 }
+  .productos-container {
+    font-size: 0; 
+    overflow: auto;
+  }
+  
+  .producto {
+    float: left; 
+    margin: 10px;
+    width: calc(33.33% - 20px); 
+    box-sizing: border-box; 
+}
+
+.header{
+  background-color:#EABE3F;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-around;
+}
+.menu a{
+  color: #000;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+  
