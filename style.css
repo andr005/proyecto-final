@@ -16,7 +16,7 @@
 /*banner*/
 .container-banner{
     width: 100%;
-    height: 400px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,4 +26,12 @@
 .container-banner img{
     width: 100%;
     height: auto;
+}
+
+.container{
+    overflow: hidden;
+}
+img{
+    float: right; 
+    margin-left: 10px
 }
