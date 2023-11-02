@@ -14,3 +14,41 @@
     text-decoration: none;
     padding: 10px 20px;
 }
+
+.footer{
+    background-color: rgb(26, 26, 26);  
+    color: #fff;
+    padding: 10px 0px;
+  }
+  
+  .footer-content{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    align-items: center;
+  }
+  
+  .footer-redes{
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .footer-redes__enlace{
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  .footer-derechos{
+    text-align: center;
+    background-color:#EABE3F ;
+    padding: 5px 0;
+  }
+  
+  .footer-redes__img{
+    width: 30px;
+  }
+  
+  .footer-logo__img{
+    width: 100px;
+  }
+  
