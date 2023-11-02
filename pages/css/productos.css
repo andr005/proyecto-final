@@ -1,25 +1,3 @@
-.menu__list{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu__list li{
-    display: inline;
-    margin-right: 10px;
-}
-  .productos-container {
-    font-size: 0; 
-    overflow: auto;
-  }
-  
-  .producto {
-    float: left; 
-    margin: 10px;
-    width: calc(33.33% - 20px); 
-    box-sizing: border-box; 
-}
-
 .header{
   background-color:#EABE3F;
   color: #000;
@@ -36,4 +14,113 @@
   text-decoration: none;
   padding: 10px 20px;
 }
+
+  .productos-container {
+    font-size: 0; 
+    overflow: auto;
+  }
+  
+ 
+  .carrito-de-compras {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.producto {
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto h3 {
+    font-size: 18px;
+}
+
+.producto p {
+    font-size: 16px;
+    color: #888;
+}
+
+.producto button {
+    background-color: #f7c00c;
+    color: #fff;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.resumen {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.resumen h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.resumen ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.resumen p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#total {
+    font-weight: bold;
+    color: #007bff;
+}
+
+
+.footer{
+  background-color: rgb(26, 26, 26);  
+  color: #fff;
+  padding: 10px 0px;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
+  align-items: center;
+}
+
+.footer-redes{
+  text-align: center;
+  margin: 10px;
+}
+
+.footer-redes__enlace{
+  padding: 10px;
+  display: inline-block;
+}
+
+.footer-derechos{
+  text-align: center;
+  background-color:#EABE3F ;
+  padding: 5px 0;
+}
+
+.footer-redes__img{
+  width: 30px;
+}
+
+.footer-logo__img{
+  width: 100px;
+}
+
   
