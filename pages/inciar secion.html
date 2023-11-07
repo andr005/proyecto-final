@@ -7,11 +7,12 @@
         <meta name="description" content="Esta pagina web trata sobre una empresa que se dedica a vender y distribuir productos apicolas">
         <meta name="keywords" content="HTML, apicola, miel, sitio web, empresa">
         <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" href="./css/productos.css">
+        <link rel="stylesheet" href="../pages/css/iniciar secion.css">
     </head>
+
     <body>
+        <h1 id="titulo">Iniciar secion</h1>
         <header class="header">
-        
             <nav class="menu">
                 <a href="../index.html">inicio</a>
                 <a href="./historia.html" class="menu__link">Historia de la apicultura</a>
@@ -21,9 +22,28 @@
                 <a href="./registrarse.html" class="menu__link">Registrarse</a>
             </nav>
          </header>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolor corporis voluptatem libero optio itaque eum,
-             veniam, ut laborum amet officia! Eligendi quae tempore, aliquam quasi aut consequatur distinctio aperiam.</p>
-
+         <form id="miFormulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+          
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br>
+          
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+          
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required><br>
+          
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero">
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+              <option value="otro">Otro</option>
+            </select><br>
+          
+            <button type="submit">Guardar</button>
+          </form>
              <footer class="footer">
                 <div class="footer-content">
         

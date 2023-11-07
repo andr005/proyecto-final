@@ -72,3 +72,9 @@ img{
 .footer-logo__img{
     width: 100px;
 }
+
+#inicio{
+    background-color: #F4D03F ;
+    border: radius 2px;
+    background-image: url(https://i.pinimg.com/1200x/9e/0f/8d/9e0f8d902a420bcc0ca1c50b568f6a86.jpg);    
+}
