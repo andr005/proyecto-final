@@ -25,37 +25,41 @@
         <h2>Carrito de Compras</h2>
     </header>
     <div class="carrito-de-compras">
-      <div class="producto">
-          <img src="https://mlfsyec2oz9a.i.optimole.com/cb:gTCp.4a4b4/w:auto/h:auto/q:mauto/ig:avif/f:best/https://www.mundotrabajo.com.uy/wp-content/uploads/2019/05/22-1.jpg" alt="producto 1" width="300">
-          <h3>Momeluco</h3>
-          <p>Precio: $3.400</p>
-          <button>Añadir al carrito</button>
+        <div class="producto">
+            <img src="https://mlfsyec2oz9a.i.optimole.com/cb:gTCp.4a4b4/w:auto/h:auto/q:mauto/ig:avif/f:best/https://www.mundotrabajo.com.uy/wp-content/uploads/2019/05/22-1.jpg" alt="producto 1" width="300">
+            <h3 id="nom-product-1">Momeluco</h3>
+            <p>Precio:$<span id="precio-product-1">3400</span></p>
+            <button onclick="agregarProductoCarrito(1)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="https://m.media-amazon.com/images/I/71ErkqsQmoL.jpg" alt="Producto 2" width="500">
+            <h3 id="nom-product-2">Guantes</h3>
+            <p>Precio:$<span id="precio-product-2">1430</span></p>
+            <button onclick="agregarProductoCarrito(2)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_846143-MLU32320509872_092019-O.webp" alt="Producto 3" width="350">
+          <h3 id="nom-product-3">Ahumador</h3>
+          <p>Precio:$<span id="precio-product-3">3750</span></p>
+          <button onclick="agregarProductoCarrito(3)">Añadir al carrito</button>
       </div>
       <div class="producto">
-          <img src="https://m.media-amazon.com/images/I/71ErkqsQmoL.jpg" alt="Producto 2" width="500">
-          <h3>Guantes</h3>
-          <p>Precio: $1.430</p>
-          <button>Añadir al carrito</button>
-      </div>
-      <div class="producto">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_846143-MLU32320509872_092019-O.webp" alt="Producto 3" width="350">
-        <h3>Ahumador</h3>
-        <p>Precio: $3.750</p>
-        <button>Añadir al carrito</button>
-    </div>
-    <div class="producto">
-      <img src="https://www.nectarbee.com.uy/wp-content/uploads/2017/09/comprar-cera-estampada.jpg" alt="Producto 2" width="350">
-      <h3>Cera estampada</h3>
-      <p>Precio: $500</p>
-      <button>Añadir al carrito</button>
-     </div>
-  </div> 
-  <div class="resumen">
-    <h2>Resumen del Carrito</h2>
-    <ul id="carrito-lista"></ul>
-    <p>Total: $<span id="total">0.00</span></p>
-</div>
-
+        <img src="https://www.nectarbee.com.uy/wp-content/uploads/2017/09/comprar-cera-estampada.jpg" alt="Producto 2" width="350">
+        <h3 id="nom-product-4">Cera estampada</h3>
+        <p>Precio:$<span id="precio-product-4">500</span></p>
+        <button onclick="agregarProductoCarrito(4)">Añadir al carrito</button>
+       </div>
+    </div> 
+    <div class="resumen">
+      <h2>Resumen del Carrito</h2>
+      <ul id="carrito-lista">
+        <li><strong>Nombre Producto:</strong> 
+            <br>
+             <strong>Precio:</strong>
+         </li>
+      </ul>
+      <p>Total: $<span id="total">000</span></p>
+  </div>
 <footer class="footer">
   <div class="footer-content">
 
@@ -81,6 +85,8 @@
       <p class="footer-derechos__parrafo">Todos los Derechos Reservados ©</p>
   </div>
 </footer>
+
+<script src="./js/productos.js"></script>
 
     </body>
 </html>

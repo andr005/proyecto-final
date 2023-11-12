@@ -36,6 +36,10 @@ img{
     margin-left: 10px
 }
 
+body{
+    background-color: khaki;
+}
+
 .footer{
     background-color: rgb(26, 26, 26);  
     color: #fff;
@@ -78,3 +82,41 @@ img{
     border: radius 2px;
     background-image: url(https://i.pinimg.com/1200x/9e/0f/8d/9e0f8d902a420bcc0ca1c50b568f6a86.jpg);    
 }
+
+.reseñas {
+    background-image: url(https://images.vexels.com/content/308362/preview/vintage-bees-and-daisies-tileable-pattern-design-610014.png);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-size: 90%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 8px;
+  }
+
+  input, textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: #EABE3F;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #FF0000;
+  }
