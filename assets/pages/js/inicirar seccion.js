@@ -26,5 +26,5 @@ formRegistro.addEventListener("submit", function (e) {
 
     localStorage.setItem("listUsuarios", JSON.stringify(listUsuarios));
 
-    window.location.href = "./registrarse.html";
+    window.location.href = "../iniciarsecion.html";
 });

@@ -4,6 +4,7 @@
     text-align: center;
     padding: 10px;
 }
+
 .menu{
     display: flex;
     justify-content: space-around;
@@ -85,11 +86,12 @@ body{
 
   
 .reseñas {
-    background-image: url(https://images.vexels.com/content/308362/preview/vintage-bees-and-daisies-tileable-pattern-design-610014.png);
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-hexagonal-degradado_23-2148956844.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699833600&semt=ais);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-size: 90%;
+
   }
 
   form {
@@ -121,3 +123,7 @@ body{
   button:hover {
     background-color: #FF0000;
   }
+
+  @media( width <=480px) {
+    
+}
