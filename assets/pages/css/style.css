@@ -1,21 +1,24 @@
-.header{
-    background-color:#EABE3F;
+.header {
+    background-color: #EABE3F;
     color: #000;
     text-align: center;
     padding: 10px;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-around;
 }
-.menu a{
+
+.menu a {
     color: #000;
     text-decoration: none;
     padding: 10px 20px;
 }
-/*banner*/
-.container-banner{
+
+
+
+.container-banner {
     width: 100%;
     height: 300px;
     display: flex;
@@ -24,67 +27,69 @@
     overflow: hidden;
     margin: 10px auto;
 }
-.container-banner img{
+
+.container-banner img {
     width: 100%;
     height: auto;
 }
 
-.container{
+.container {
     overflow: hidden;
 }
-img{
-    float: right; 
+
+img {
+    float: right;
     margin-left: 10px
 }
 
-body{
+body {
     background-color: khaki;
 }
 
-.footer{
-    background-color: rgb(26, 26, 26);  
+.footer {
+    background-color: rgb(26, 26, 26);
     color: #fff;
     padding: 10px 0px;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     justify-content: space-around;
     margin: 0px;
     align-items: center;
 }
 
-.footer-redes{
+.footer-redes {
     text-align: center;
     margin: 10px;
 }
 
-.footer-redes__enlace{
+.footer-redes__enlace {
     padding: 10px;
     display: inline-block;
 }
 
-.footer-derechos{
+.footer-derechos {
     text-align: center;
-    background-color:#EABE3F ;
+    background-color: #EABE3F;
     padding: 5px 0;
 }
 
-.footer-redes__img{
+.footer-redes__img {
     width: 30px;
 }
 
-.footer-logo__img{
+.footer-logo__img {
     width: 100px;
 }
 
-#inicio{
-    background-color: #F4D03F ;
+#inicio {
+    background-color: #F4D03F;
     border: radius 2px;
-    background-image: url(https://i.pinimg.com/1200x/9e/0f/8d/9e0f8d902a420bcc0ca1c50b568f6a86.jpg);    
+    background-image: url(https://i.pinimg.com/1200x/9e/0f/8d/9e0f8d902a420bcc0ca1c50b568f6a86.jpg);
 }
 
-  
+
 .reseñas {
     background-image: url(https://img.freepik.com/vector-gratis/fondo-hexagonal-degradado_23-2148956844.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699833600&semt=ais);
     padding: 20px;
@@ -92,25 +97,30 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-size: 90%;
 
-  }
+}
 
-  form {
+
+
+form {
     display: flex;
     flex-direction: column;
-  }
+}
 
-  label {
+
+
+label {
     margin-bottom: 8px;
-  }
+}
 
-  input, textarea {
+input,
+textarea {
     margin-bottom: 16px;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
+}
 
-  button {
+button {
     background-color: #EABE3F;
     color: #fff;
     padding: 10px;
@@ -118,12 +128,96 @@ body{
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-  }
+}
 
-  button:hover {
+.header__nav--visible {
+    right: 0 !important;
+}
+
+button:hover {
     background-color: #FF0000;
-  }
+}
 
-  @media( width <=480px) {
-    
+.menu {
+    display: flex;
+    justify-content: space-around;
+    /* Agregado para separar los elementos al máximo */
+    align-items: center;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.header__icon {
+    cursor: pointer;
+    color: #000;
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+
+
+    .header {
+        padding: 5px;
+
+    }
+
+    .menu a {
+        padding: 5px 10px;
+
+    }
+
+    /* Main */
+    main {
+        padding: 10px;
+
+    }
+
+    .header__menu {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .header__menu a {
+        padding: 10px;
+    }
+
+    .header__icon {
+        display: block;
+        margin-right: 10px;
+        margin-top: 30px;
+
+    }
+
+
+    .header {
+        padding: 15px 25px;
+    }
+
+    .header__nav {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        padding: 50px;
+        background-color: yellow;
+        width: 80%;
+        transition: right 0.3s;
+
+
+    }
+
+    .header__menu {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 40px;
+
+
+    }
 }

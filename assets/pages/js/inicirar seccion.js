@@ -1,30 +1,19 @@
-class Usuario {
-    constructor(nombre, correo, password) {
-        this.nombre = nombre;
-        this.correo = correo;
-        this.password = password;
-    }
-}
+document.getElementById('registro').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var pass = document.getElementById('pass').value;
 
-let listUsuarios = [];
-if (JSON.parse(localStorage.getItem("listUsuarios"))) {
-    listUsuarios = JSON.parse(localStorage.getItem("listUsuarios"));
-}
+    var usuario = {
+        name: name,
+        email: email,
+        pass: pass
+    };
+
+    
+    localStorage.setItem('usuario', JSON.stringify(usuario));
 
 
-const formRegistro = document.getElementById("registro");
-
-formRegistro.addEventListener("submit", function (e) {
-    e.preventDefault();
-    const nombreObtenido = document.getElementById("name").value;
-    const correoObtenido = document.getElementById("email").value;
-    const passwordObtenida = document.getElementById("pass").value;
-
-    let newUsuario = new Usuario(nombreObtenido, correoObtenido, passwordObtenida);
-
-    listUsuarios.push(newUsuario);
-
-    localStorage.setItem("listUsuarios", JSON.stringify(listUsuarios));
-
-    window.location.href = "../iniciarsecion.html";
+    console.log('Usuario registrado:', usuario);
 });
