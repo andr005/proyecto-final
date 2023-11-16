@@ -19,3 +19,20 @@ function enviarResena() {
     document.getElementById("nombre").value = "";
     document.getElementById("resena").value = "";
   }
+  
+  const header = document.getElementById("header");
+const menuOpen = document.getElementById("menu-open");
+const menuClose = document.getElementById("menu-close");
+const navMenu = document.getElementById("nav-menu");
+//Menu responive
+if (menuOpen) {
+  menuOpen.addEventListener("click", () => {
+    navMenu.classList.add("header__nav--visible");
+  });
+}
+
+if (menuClose) {
+  menuClose.addEventListener("click", () => {
+    navMenu.classList.remove("header__nav--visible");
+  });
+}
