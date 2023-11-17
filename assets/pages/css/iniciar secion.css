@@ -29,6 +29,15 @@
   background-color: #F4D03F;
 }
 
+main {
+  margin-top: 20px;
+}
+
+.login-box {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
 #titulo{
 background-color: #EABE3F;
 }
@@ -142,4 +151,10 @@ body{
       border-bottom: 1px solid #ffe65d;
     }
     
+    #registro{
+    
+      max-width: 300px;
+    
+    }
+
 }

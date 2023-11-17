@@ -28,6 +28,11 @@
 .menu__item:hover{
   background-color: #F4D03F;
 }
+
+#titulo{
+  color: #fff;
+}
+
 body{
   background-image: url(https://wallpapers.com/images/hd/4k-flowers-background-zggelep09pnaanis.jpg);
 }
@@ -105,4 +110,8 @@ body{
         border-bottom: 1px solid #ffe65d;
       }
       
+      #miFormulario {
+        max-width: 300px;
+      }
+
 }
