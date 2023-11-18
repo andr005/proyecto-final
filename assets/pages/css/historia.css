@@ -35,7 +35,11 @@
 
 img {
   float: right;
-  margin-left: 10px;
+  margin-left: 60px;
+}
+
+#antiguo{
+  overflow: hidden;
 }
 
 body{
@@ -97,4 +101,8 @@ background-color: #ffe4c4;
         border-bottom: 1px solid #ffe65d;
       }
       
+  img{
+    display: grid;
+    place-items: center;
+  }
 }
